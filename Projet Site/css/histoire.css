@@ -1,0 +1,56 @@
+*{margin: 0;
+    padding: 0;}
+
+.conteneur{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header{
+    display: flex;
+    background-color: lightsteelblue;
+    align-items: center;
+    width: 100%;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: x-large;
+}
+.lg{
+    height: 12vh;
+}
+
+main{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.chrono{
+    display: flex;
+    justify-content: flex-start;
+    height: 40vh;
+    width: 50%;
+}
+.groupe{
+    width: 50%;
+}
+
+
+@media screen and (max-width: 480px){
+    .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: large;
+    }
+    .chrono{
+        width: 100vw;
+        height: 20vh;
+    }
+    .groupe{
+        width: 100%;
+    }
+}
